@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Journey | One Piece</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background:
+    linear-gradient(rgba(0, 20, 45, 0.82),
+    rgba(0, 15, 35, 0.90)),
+    url("ocean.jfif");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 70px 20px;
+    background: rgba(0, 0, 0, 0.45);
+    border-bottom: 3px solid #e9b44c;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #ffcb45;
+    text-shadow: 2px 2px 5px black;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+nav {
+    background: #092c4c;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid #e9b44c;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcb45;
+}
+
+section {
+    background: rgba(4, 28, 54, 0.90);
+    margin: 30px auto;
+    padding: 30px;
+    width: 85%;
+    max-width: 900px;
+    border: 2px solid #d6a63c;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+h2 {
+    color: #ffcb45;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d6a63c;
+    padding-bottom: 10px;
+}
+
+p, li {
+    line-height: 1.8;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+.motto {
+    text-align: center;
+    font-size: 23px;
+    font-style: italic;
+    color: #ffcb45;
+    padding: 15px;
+}
+
+.music {
+    text-align: center;
+    padding: 20px;
+}
+
+.music button {
+    background: #e9b44c;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.music button:hover {
+    background: #ffda75;
+}
+
+footer {
+    background: #061b30;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #e9b44c;
+}
+
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 13px;
+    }
+
+    section {
+        width: 92%;
+        padding: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏴‍☠️ MY JOURNEY</h1>
+    <p>Welcome to My World | About Me</p>
+    <p>“The journey is more important than the destination.”</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#personal">Personal Info</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#favorites">Favorites</a>
+    <a href="#motto">Life Motto</a>
+</nav>
+
+<div class="music">
+   
+    <br>
+    <audio id="bgMusic" loop>
+        <source src="one-piece-opening.mp3" type="audio/mp3">
+    </audio>
+    <button onclick="toggleMusic()" id="musicButton">
+        ▶ Play Music
+    </button>
+</div>
+
+<section id="about">
+    <h2>🌊 About Me</h2>
+    <p>
+        Hello! My name is John Arvie Malinao.
+        I am a student who is passionate about technology,
+        electronics, and learning new things. I enjoy
+        exploring computers, fixing electronic devices,
+        playing games, and watching anime.
+
+        Just like the characters in One Piece, I believe
+        that life is an adventure filled with challenges,
+        lessons, and opportunities. My dream is to become
+        a successful teacher and inspire others.
+    </p>
+</section>
+
+<section id="personal">
+    <h2>📜 Personal Information</h2>
+    <ul>
+        <li><b>Name:</b> John Arvie Malinao</li>
+        <li><b>Course:</b> BTLEd</li>
+        <li><b>School:</b> Marinduque State University</li>
+        <li><b>Hobbies:</b> Gaming, watching anime, listening to music</li>
+        <li><b>Skills:</b> Computer troubleshooting and electronics repair</li>
+    </ul>
+</section>
+
+<section id="achievements">
+    <h2>🏆 Achievements</h2>
+    <ul>
+        <li>Successfully completed Senior High School.</li>
+        <li>Developed skills in computer hardware and electronics.</li>
+        <li>Improved my knowledge of information technology.</li>
+        <li>Continuously working toward my dreams and goals.</li>
+    </ul>
+</section>
+
+<section id="favorites">
+    <h2>❤️ Favorite Things</h2>
+    <ul>
+        <li><b>Favorite Anime:</b> One Piece and Attack on Titan</li>
+        <li><b>Favorite Hobby:</b> Playing online games</li>
+        <li><b>Favorite Music:</b> Alternative and Rock</li>
+        <li><b>Favorite Activity:</b> Exploring technology</li>
+        <li><b>Favorite Game:</b> Valorant</li>
+    </ul>
+</section>
+
+<section id="motto">
+    <h2>⚓ Life Motto</h2>
+    <p class="motto">
+        "No matter how difficult the journey gets,
+        never give up on your dreams.
+        Keep moving forward and create your own adventure."
+    </p>
+</section>
+
+<footer>
+    <p>🏴‍☠️ © 2026 John Arvie Malinao</p>
+    <p>Set Sail and Chase Your Dreams!</p>
+</footer>
+
+<script>
+const music = document.getElementById("bgMusic");
+const button = document.getElementById("musicButton");
+
+function toggleMusic() {
+    if (music.paused) {
+        music.play();
+        button.innerHTML = "⏸ Pause Music";
+    } else {
+        music.pause();
+        button.innerHTML = "▶ Play Music";
+    }
+}
+</script>
+
+</body>
+</html>
